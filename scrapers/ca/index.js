@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-const chromeHeadless = false;
+const chromeHeadless = true;
 
 const verScraper = async (params) => {
 
