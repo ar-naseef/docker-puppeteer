@@ -7,10 +7,14 @@ const Scrapers = require('./scrapers');
 const PORT = 3333;
 const app = express();
 
-app.use(bodyParser.json())
 app.use(cors());
 
+app.options('*', cors())
+
+app.use(bodyParser.json())
+
 app.get('/', (req, res) => {
+  console.log("test endpoint");
   res.json({
     test: "test success"
   })
