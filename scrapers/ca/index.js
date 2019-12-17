@@ -23,7 +23,7 @@ const verScraper = async (params) => {
 
   console.log("enter licence number");
   await page.type('input#licenseNumber', params.licence_number, {
-    delay: 100
+    delay: 50
   })
 
   console.log("click submit and wait for results page to load");
